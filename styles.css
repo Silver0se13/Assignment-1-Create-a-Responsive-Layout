@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+
+        header{
+            background-color: #120323;
+        }
+
+        header img{
+            display:flex;
+            justify-content: center;
+            margin:auto;
+        }
+
+        header h1{
+            display:flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+            color:#97bf04;
+        }
+
+        main figure img{
+            border: solid #d9043d
+        }
+
+}
