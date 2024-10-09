@@ -4,16 +4,20 @@
 body{
     display: flex;
     flex-direction: column;
+    flex: 100%;
     font-family: sans-serif;
+}
 
         header{
             background-color: #120323;
         }
 
         header img{
+            width:25%;
             display:flex;
             justify-content: center;
             margin:auto;
+            padding-top: 1rem;
         }
 
         header h1{
@@ -24,7 +28,7 @@ body{
         }
 
         main figure img{
+            width: 100%;
+            height: auto;
             border: solid #d9043d
         }
-
-}
