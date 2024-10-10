@@ -2,33 +2,132 @@
     box-sizing: border-box;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    flex: 100%;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-        header{
-            background-color: #120323;
-        }
+header{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #120323;
+}
 
-        header img{
-            width:25%;
-            display:flex;
-            justify-content: center;
-            margin:auto;
-            padding-top: 1rem;
-        }
+header img{
+    width:20%;
+    padding-top: 1rem;
+}
 
-        header h1{
-            display:flex;
-            justify-content: center;
-            padding-bottom: 1rem;
-            color:#97bf04;
-        }
+header h1{
+    font-size: 4vw;
+    padding-bottom: 1rem;
+    color:#97bf04;
+}
 
-        main figure img{
-            width: 100%;
-            height: auto;
-            border: solid #d9043d
-        }
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+main figure img{
+    width: 100%;
+    height: auto;
+    border:solid #d9043d;
+    border-width: 1vw;
+}
+
+aside{
+    background-color: #97bf04;
+    padding:1rem;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d9043d;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width:768px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 3vw;
+    }
+    header img{
+        width:15vw;
+        padding-bottom: 1rem;
+    }
+    header h1{
+        padding-top:1rem;
+    }
+    main figure img{
+        margin:1rem;
+        width:30vw;
+        height:30vw;
+        border:solid #d9043d;
+        border-width: 0.3rem;
+    }
+    main figure{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+    }
+    main figure figcaption{
+        font-size: 1.5vw;
+    }
+    aside{
+        font-size: 1.5vw;
+    }
+    footer{
+        flex-direction: column;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1000px){
+    header{
+        padding:0.1rem;
+        gap: 1rem;
+    }
+    header img{
+        width:10vw;
+    }
+    header h1{
+        font-size: 2vw;
+    }
+    main {
+        flex: 1;
+    }
+    div#container{
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-evenly;
+    }
+    main figure img{
+        flex:0.5;
+        width: auto;
+        height: 25vw;
+
+    }
+    main figure figcaption{
+        flex: 1.1;
+        font-size: 1vw;
+    }
+    aside{
+        font-size: 1vw;
+        margin-top: 2rem;
+        flex: 0.3;
+    }
+    footer{
+        flex-direction: column;
+        justify-items: flex-end;
+    }
+}
